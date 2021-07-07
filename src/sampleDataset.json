@@ -1,0 +1,156 @@
+{
+    "identifier": "ds-nsw-ckan-febaec26-481e-4b5a-b52d-daa927b6e7cf",
+    "title": "Buildings 3D",
+    "description:": "test 3D dataset",
+    "issuedDate": "14/08/2020",
+    "updatedDate": "01/07/2021",
+    "landingPage": "https://portal.spatial.nsw.gov.au/portal/home/item.html?id=66895723791f4812b823d70637616bcb",
+    "tags": ["3D", "Buildings", "Digital Twin", "PSMA", "Shells"],
+    "distributions": [
+        {
+            "identifier": "dist-nsw-ckan-416d8baf-cd0e-45d7-8797-4fc87fc74ffd",
+            "title": "416d8baf-cd0e-45d7-8797-4fc87fc74ffd",
+            "downloadURL": "https://portal.spatial.nsw.gov.au/i3s/rest/services/Hosted/CSP/Buildings3D/SceneServer",
+            "accessURL": null,
+            "format": "ARCGIS",
+            "license": "License Not Specified",
+            "description": "No description provided",
+            "linkStatusAvailable": true,
+            "linkActive": true,
+            "updatedDate": null,
+            "isTimeSeries": false,
+            "compatiblePreviews": {
+                "map": false,
+                "chart": false,
+                "table": false,
+                "json": false,
+                "html": false,
+                "text": false,
+                "rss": false,
+                "google": false
+            },
+            "visualizationInfo": {
+                "fields": {},
+                "format": null,
+                "timeseries": false,
+                "wellFormed": false,
+                "compatiblePreviews": null
+            },
+            "sourceDetails": {
+                "id": "nsw-ckan",
+                "name": "data.nsw.gov.au",
+                "type": "ckan-resource",
+                "url": "https://data.nsw.gov.au/data/api/3/action/resource_show?id=416d8baf-cd0e-45d7-8797-4fc87fc74ffd"
+            },
+            "ckanResource": {
+                "created": "2019-11-14T00:49:12",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "format": "ARCGIS REST SERVICE",
+                "hash": "",
+                "id": "416d8baf-cd0e-45d7-8797-4fc87fc74ffd",
+                "metadata_modified": "2021-06-30T14:22:51.496460",
+                "package_id": "febaec26-481e-4b5a-b52d-daa927b6e7cf",
+                "position": 0,
+                "state": "active",
+                "url": "https://portal.spatial.nsw.gov.au/i3s/rest/services/Hosted/CSP/Buildings3D/SceneServer"
+            }
+        },
+        {
+            "identifier": "dist-nsw-ckan-dfe942fc-6d8c-45ff-8482-096f75ceb9b7",
+            "title": "dfe942fc-6d8c-45ff-8482-096f75ceb9b7",
+            "downloadURL": "https://portal.spatial.nsw.gov.au/i3s/rest/services/Hosted/CSP/Buildings3D/SceneServer/WMSServer?request=GetCapabilities&service=WMS",
+            "accessURL": null,
+            "format": "WMS",
+            "license": "License Not Specified",
+            "description": "No description provided",
+            "linkStatusAvailable": true,
+            "linkActive": false,
+            "updatedDate": null,
+            "isTimeSeries": false,
+            "compatiblePreviews": {
+                "map": true,
+                "chart": false,
+                "table": false,
+                "json": false,
+                "html": false,
+                "text": false,
+                "rss": false,
+                "google": false
+            },
+            "visualizationInfo": {
+                "fields": {},
+                "format": null,
+                "timeseries": false,
+                "wellFormed": false,
+                "compatiblePreviews": null
+            },
+            "sourceDetails": {
+                "id": "nsw-ckan",
+                "name": "data.nsw.gov.au",
+                "type": "ckan-resource",
+                "url": "https://data.nsw.gov.au/data/api/3/action/resource_show?id=dfe942fc-6d8c-45ff-8482-096f75ceb9b7"
+            },
+            "ckanResource": {
+                "created": "2019-11-14T00:49:12",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "format": "WMS",
+                "hash": "",
+                "id": "dfe942fc-6d8c-45ff-8482-096f75ceb9b7",
+                "metadata_modified": "2021-06-30T14:22:51.496616",
+                "package_id": "febaec26-481e-4b5a-b52d-daa927b6e7cf",
+                "position": 1,
+                "state": "active",
+                "url": "https://portal.spatial.nsw.gov.au/i3s/rest/services/Hosted/CSP/Buildings3D/SceneServer/WMSServer?request=GetCapabilities&service=WMS"
+            }
+        }
+    ],
+    "source": "data.nsw.gov.au",
+    "temporalCoverage": {
+        "intervals": []
+    },
+    "publisher": {
+        "aspects": {
+            "organization-details": {
+                "description": "Spatial Services, a division of the Department of Finance, Service and Innovation, is the key provider of spatial land information services in New South Wales.\r\n\r\nAuthoritative land information is a vital tool that enables the community, business and government to derive maximum benefit from land and property to generate economic growth and prosperity.\r\n\r\nSpatial Services' integrated framework connects the people of NSW to a comprehensive package of land and property services including property information, surveying and mapping. Spatial Services' provides land information services to individuals, businesses, government agencies and non-profit organisations throughout NSW, Australia and internationally.\r\nSpatial Services:\r\n\r\n•\tsources information from organisations and individuals to compile maps, databases and information\r\n\r\n•\tprovides services to the Surveyor General who has responsibilities for administering various Acts of Parliament\r\n\r\n•\tmakes information available to the public and organisations for land management purposes, for state economic and social development and for planning and providing government services to the community, including event and emergency management\r\n\r\n•\tlicenses, sells, exchanges or gives the data it collects to organisations or individuals, to facilitate the above purposes.\r\n\r\nSee: http://spatialservices.finance.nsw.gov.au/\r\n",
+                "imageUrl": "https://data.nsw.gov.au/data/uploads/group/2019-01-30-060343.2257221.jpg",
+                "jurisdiction": "Commonwealth of Australia",
+                "name": "dfsi-spatial-services",
+                "title": "Spatial Services (DFSI)"
+            },
+            "source": {
+                "id": "nsw-ckan",
+                "name": "data.nsw.gov.au",
+                "type": "ckan-organization",
+                "url": "https://data.nsw.gov.au/data/api/3/action/organization_show?id=cdf38dd0-3659-4abd-a017-07208a594715"
+            }
+        },
+        "id": "org-nsw-ckan-cdf38dd0-3659-4abd-a017-07208a594715",
+        "name": "Spatial Services (DFSI)"
+    },
+    "linkedDataRating": 0,
+    "hasQuality": true,
+    "themes": [],
+    "sourceDetails": {
+        "id": "nsw-ckan",
+        "name": "data.nsw.gov.au",
+        "originalName": "Spatial",
+        "originalUrl": "https://portal.spatial.nsw.gov.au/portal/home/item.html?id=66895723791f4812b823d70637616bcb",
+        "type": "ckan-dataset",
+        "url": "https://data.nsw.gov.au/data/api/3/action/package_show?id=febaec26-481e-4b5a-b52d-daa927b6e7cf"
+    },
+    "provenance": {},
+    "temporalExtent": {},
+    "informationSecurity": {},
+    "accrualPeriodicity": "",
+    "accrualPeriodicityRecurrenceRule": "",
+    "ckanExport": {
+        "https://demo.ckan.org": {
+            "status": "withdraw",
+            "hasCreated": false,
+            "exportRequired": false,
+            "exportAttempted": false
+        }
+    }
+}

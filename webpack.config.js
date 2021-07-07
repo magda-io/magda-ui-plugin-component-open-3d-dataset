@@ -6,17 +6,8 @@ const configFile = path.resolve(__dirname, "./tsconfig.json");
 
 module.exports = {
     entry: {
-        MagdaPluginComponentHeader: {
-            import: "./src/MagdaPluginComponentHeader.tsx",
-            filename: "[name].js",
-            library: {
-                name: "[name]",
-                type: "umd",
-                umdNamedDefine: true
-            }
-        },
-        MagdaPluginComponentFooter: {
-            import: "./src/MagdaPluginComponentFooter.tsx",
+        MagdaPluginComponentExtraVisualisationSection: {
+            import: "./src/MagdaPluginComponentExtraVisualisationSection.tsx",
             filename: "[name].js",
             library: {
                 name: "[name]",

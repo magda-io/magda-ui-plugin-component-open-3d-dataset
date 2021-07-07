@@ -1,28 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import {
-    user,
-    headerNavItems,
-    footerCopyRightItems,
-    footerMediumNavs,
-    footerSmallNavs,
-    config
-} from "./defaultData";
-import MagdaPluginComponentHeader from "./MagdaPluginComponentHeader";
-import MagdaPluginComponentFooter from "./MagdaPluginComponentFooter";
+import { user, config } from "./defaultData";
+import sampleDatasetData from "./sampleDataset.json";
+import MagdaPluginComponentExtraVisualisationSection from "./MagdaPluginComponentExtraVisualisationSection";
 
 ReactDOM.render(
     <BrowserRouter>
         <div>
             <div>
-                <h2>Header:</h2>
+                <h2>Open 3D Dataset Button On Dataset Page:</h2>
                 <div>
-                    <MagdaPluginComponentHeader
+                    <MagdaPluginComponentExtraVisualisationSection
                         isFetchingWhoAmI={false}
                         whoAmIError={null}
                         user={user}
-                        headerNavItems={headerNavItems}
                         config={config}
                         requestSignOut={() => Promise.resolve()}
                         requestWhoAmI={() => Promise.resolve()}
@@ -30,21 +22,19 @@ ReactDOM.render(
                         history={{} as any}
                         location={{} as any}
                         match={{} as any}
+                        dataset={sampleDatasetData}
                     />
                 </div>
             </div>
-            <br />
             <div>
-                <h2>Footer:</h2>
+                <h2>
+                    Open 3D Dataset Button On Distribution Page With 3D Dataset:
+                </h2>
                 <div>
-                    <MagdaPluginComponentFooter
+                    <MagdaPluginComponentExtraVisualisationSection
                         isFetchingWhoAmI={false}
                         whoAmIError={null}
                         user={user}
-                        footerCopyRightItems={footerCopyRightItems}
-                        footerMediumNavs={footerMediumNavs}
-                        footerSmallNavs={footerSmallNavs}
-                        noTopMargin={true}
                         config={config}
                         requestSignOut={() => Promise.resolve()}
                         requestWhoAmI={() => Promise.resolve()}
@@ -52,6 +42,34 @@ ReactDOM.render(
                         history={{} as any}
                         location={{} as any}
                         match={{} as any}
+                        dataset={sampleDatasetData}
+                        distributionId={
+                            "dist-nsw-ckan-416d8baf-cd0e-45d7-8797-4fc87fc74ffd"
+                        }
+                    />
+                </div>
+            </div>
+            <div>
+                <h2>
+                    Open 3D Dataset Button On Distribution Page Without 3D
+                    Dataset:
+                </h2>
+                <div>
+                    <MagdaPluginComponentExtraVisualisationSection
+                        isFetchingWhoAmI={false}
+                        whoAmIError={null}
+                        user={user}
+                        config={config}
+                        requestSignOut={() => Promise.resolve()}
+                        requestWhoAmI={() => Promise.resolve()}
+                        fetchContent={() => Promise.resolve()}
+                        history={{} as any}
+                        location={{} as any}
+                        match={{} as any}
+                        dataset={sampleDatasetData}
+                        distributionId={
+                            "dist-nsw-ckan-dfe942fc-6d8c-45ff-8482-096f75ceb9b7"
+                        }
                     />
                 </div>
             </div>

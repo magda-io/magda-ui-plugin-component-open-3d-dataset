@@ -306,5 +306,11 @@ export const config: ConfigType = {
     ckanExportServers: {
         "https://demo.ckan.org": true
     },
-    defaultCkanServer: "https://demo.ckan.org"
+    defaultCkanServer: "https://demo.ckan.org",
+    extraConfigData: {
+        "3dDatasetDigitalTwinInstances": [{
+            sourceDataDomain: "nsw.gov.au",
+            url: "https://nsw.digitaltwin.terria.io/"
+        }]
+    }
 };
