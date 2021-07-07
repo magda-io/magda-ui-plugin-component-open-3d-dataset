@@ -12,7 +12,7 @@
             "title": "416d8baf-cd0e-45d7-8797-4fc87fc74ffd",
             "downloadURL": "https://portal.spatial.nsw.gov.au/i3s/rest/services/Hosted/CSP/Buildings3D/SceneServer",
             "accessURL": null,
-            "format": "ARCGIS",
+            "format": "ESRI SCENESERVER",
             "license": "License Not Specified",
             "description": "No description provided",
             "linkStatusAvailable": true,
