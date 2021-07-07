@@ -1,18 +1,37 @@
-# magda-plugin-ui-component-examples
+# magda-ui-plugin-component-open-3d-dataset
 
-This is an exmaple repo that demostrates how to build Magda Plugin React UI Components.
+A Magda UI Plugin Component that allows users to open 3D datasets from DT instances.
 
-These components will be used to replace the generic built-in Magda UI react component via `<script>` tags. To order to achieve that, the components bundled here will treat React & ReactDom as externals and attempt to use the global shared UMD version libs. i.e. sharing the same React libs copy with main Magda UI JS bundles.
+More about Magda UI Plugin Component see: https://github.com/magda-io/magda-plugin-ui-component-examples
 
-The purpose of doing this is to offer a more flexible way of customising UI component and be able to implement complex logic during the customisation without forking the Magda UI module.
+## How to Run Locally
 
-You can instruct Magda to load your Plugin UI components via `magad-web-server` module Helm Config. e.g.:
+```bash
+yarn start
+```
+
+Access: http://localhost:8080/
+
+## How to Deploy with Magda / Config
+
+1> Build the bundle
+
+```bash
+yarn build
+```
+
+2> Upload files in `dist` folder to your own web service.
+
+3> Config Magda Web Server Module
 
 ```yaml
 web-server:
   externalUIComponents:
-    - "https://exmaple.com/assets/libs/MagdaPluginComponentHeader.js"
-    - "https://exmaple.com/assets/libs/MagdaPluginComponentFooter.js"
+    - "https://exmaple.com/assets/libs/MagdaPluginComponentExtraVisualisationSection.js"
+  extraConfigData:
+    "3dDatasetDigitalTwinInstances":
+    - sourceDataDomain: "xxx.xx.xx"
+      url: "https://my.digitaltwin.com.au/"
 ```
 
 You also need to configure Magda Gateway module `CSP` config accordingly to make sure scripts from `exmaple.com` are allowed. e.g.:
@@ -39,11 +58,4 @@ For more information, please refer to this issue:
 
 https://github.com/magda-io/magda/issues/3099
 
-### Run The Demo
-
-```bash
-yarn start
-```
-
-Access http://localhost:8080/
 
