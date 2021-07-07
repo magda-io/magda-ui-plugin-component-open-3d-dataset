@@ -150,7 +150,7 @@ const MagdaPluginComponentExtraVisualisationSection: ExtraVisualisationSectionCo
         return (
             <div className="no-print">
                 <h3 className="section-heading">Map Preview</h3>
-                <p>
+                <p style={{ marginBottom: "10px" }}>
                     Map Preview cannot preview 3D datasets. Please click the
                     button to view the 3D datasets in Digital Twin.
                 </p>
