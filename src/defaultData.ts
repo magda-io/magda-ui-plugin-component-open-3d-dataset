@@ -1,4 +1,4 @@
-import { ConfigType } from "./magdaCommon";
+import { ConfigDataType } from "@magda/external-ui-plugin-sdk";
 
 export const user = {
     id: "",
@@ -57,112 +57,8 @@ export const user = {
     managingOrgUnitIds: []
 };
 
-export const headerNavItems = [
-    {
-        order: 0,
-        default: {
-            label: "Organisations",
-            href: "/organisations"
-        }
-    },
-    {
-        default: {
-            label: "Datasets",
-            href: "/search"
-        },
-        order: 1
-    },
-    {
-        order: 2,
-        default: {
-            label: "About",
-            href: "/page/about"
-        }
-    },
-    {
-        default: {
-            label: "Add a Dataset",
-            href: "/dataset/add"
-        },
-        order: 3
-    },
-    {
-        auth: {},
-        order: 4
-    }
-];
-
-export const footerCopyRightItems = [
-    {
-        order: 999,
-        logoSrc:
-            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAKCAYAAAD2Fg1xAAAAI0lEQVR42u3PAREAMAgAoTe50bceHjRgXm0HjIiIiIiIiEh9iR0O99ylthgAAAAASUVORK5CYII=",
-        href: "http://magda.io",
-        htmlContent: "New Copyright"
-    }
-];
-
-export const footerMediumNavs = [
-    {
-        order: 20,
-        label: "Developers",
-        links: [
-            {
-                order: 10,
-                label: "API Documentation",
-                href: "/api/v0/apidocs/index.html"
-            },
-            {
-                order: 20,
-                label: "Powered by Magda",
-                href: "https://magda.io"
-            }
-        ]
-    },
-    {
-        order: 10,
-        label: "Magda",
-        links: [
-            {
-                order: 10,
-                label: "About",
-                href: "page/about"
-            },
-            {
-                order: 20,
-                label: "Suggest a dataset",
-                href: "suggest"
-            },
-            {
-                order: 30,
-                label: "Privacy Policy",
-                href: "page/privacy-policy"
-            }
-        ]
-    }
-];
-
-export const footerSmallNavs = [
-    {
-        order: 10,
-        label: "Magda",
-        links: [
-            {
-                order: 10,
-                label: "About",
-                href: "page/about"
-            },
-            {
-                order: 20,
-                label: "Suggest a dataset",
-                href: "suggest"
-            }
-        ]
-    }
-];
-
-export const config: ConfigType = {
-    credentialsFetchOptions: {
+export const config: ConfigDataType = {
+    commonFetchRequestOptions: {
         credentials: "include"
     },
     showNotificationBanner: false,
@@ -170,40 +66,29 @@ export const config: ConfigType = {
     baseExternalUrl: "https://dev.magda.io/",
     uiBaseUrl: "/",
     authPluginRedirectUrl: "/sign-in-redirect",
-    contentApiURL: "https://dev.magda.io/api/v0/content/",
-    searchApiUrl: "https://dev.magda.io/api/v0/search/",
-    registryReadOnlyApiUrl: "https://dev.magda.io/api/v0/registry-read-only/",
-    registryFullApiUrl: "https://dev.magda.io/api/v0/registry/",
-    adminApiUrl: "https://dev.magda.io/api/v0/admin/",
-    authApiUrl: "https://dev.magda.io/api/v0/auth/",
-    correspondenceApiUrl: "https://dev.magda.io/api/v0/correspondence/",
-    storageApiUrl: "https://dev.magda.io/api/v0/storage/",
-    previewMapUrl: "https://dev.magda.io/preview-map/",
+    contentApiBaseUrl: "https://dev.magda.io/api/v0/content/",
+    searchApiBaseUrl: "https://dev.magda.io/api/v0/search/",
+
+    registryApiReadOnlyBaseUrl:
+        "https://dev.magda.io/api/v0/registry-read-only/",
+    registryApiBaseUrl: "https://dev.magda.io/api/v0/registry/",
+    useMagdaStorageByDefault: true,
+    anonymousUserLandingPage: "/home",
+    authenticatedUserLandingPage: "/home",
+    adminApiBaseUrl: "https://dev.magda.io/api/v0/admin/",
+    authApiBaseUrl: "https://dev.magda.io/api/v0/auth/",
+    indexerApiBaseUrl: "https://dev.magda.io/api/v0/indexer/",
+    correspondenceApiBaseUrl: "https://dev.magda.io/api/v0/correspondence/",
+    storageApiBaseUrl: "https://dev.magda.io/api/v0/storage/",
+    previewMapBaseUrl: "https://dev.magda.io/preview-map/",
     proxyUrl: "https://dev.magda.io/preview-map/proxy/",
-    rssUrl:
-        "https://dev.magda.io/preview-map/proxy/_0d/https://blog.data.gov.au/blogs/rss.xml",
+    rssUrl: "https://dev.magda.io/preview-map/proxy/_0d/https://blog.data.gov.au/blogs/rss.xml",
     disableAuthenticationFeatures: false,
     breakpoints: {
         small: 768,
         medium: 992,
         large: 1200
     },
-    facets: [
-        {
-            id: "publisher",
-            showExplanation: true,
-            name: "Organisation"
-        },
-        {
-            id: "region"
-        },
-        {
-            id: "format"
-        },
-        {
-            id: "temporal"
-        }
-    ],
     headerLogoUrl: "https://dev.magda.io/api/v0/content/header/logo",
     headerMobileLogoUrl:
         "https://dev.magda.io/api/v0/content/header/logo-mobile",
@@ -234,7 +119,6 @@ export const config: ConfigType = {
         cataloguing: true,
         publishToDga: true,
         previewAddDataset: false,
-        placeholderWorkflowsOn: false,
         datasetApprovalWorkflowOn: false,
         useStorageApi: true
     },

@@ -6,11 +6,11 @@ const configFile = path.resolve(__dirname, "./tsconfig.json");
 
 module.exports = {
     entry: {
-        MagdaPluginComponentExtraVisualisationSection: {
-            import: "./src/MagdaPluginComponentExtraVisualisationSection.tsx",
+        Open3dDatasetSection: {
+            import: "./src/Open3dDatasetSection.tsx",
             filename: "[name].js",
             library: {
-                name: "[name]",
+                name: ["MagdaPluginComponentExtraVisualisationSection","Open3dDatasetSection"],
                 type: "umd",
                 umdNamedDefine: true
             }
@@ -49,6 +49,17 @@ module.exports = {
                         ]
                     }
                 }
+            },
+            {
+                test: /\.(css|s[ac]ss)$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader"
+                ]
             },
             {
                 test: /\.svg$/,

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { user, config } from "./defaultData";
 import sampleDatasetData from "./sampleDataset.json";
-import MagdaPluginComponentExtraVisualisationSection from "./MagdaPluginComponentExtraVisualisationSection";
+import Open3dDatasetSection from "./Open3dDatasetSection";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -11,7 +11,7 @@ ReactDOM.render(
             <div>
                 <h2>Open 3D Dataset Button On Dataset Page:</h2>
                 <div>
-                    <MagdaPluginComponentExtraVisualisationSection
+                    <Open3dDatasetSection
                         isFetchingWhoAmI={false}
                         whoAmIError={null}
                         user={user}
@@ -22,7 +22,7 @@ ReactDOM.render(
                         history={{} as any}
                         location={{} as any}
                         match={{} as any}
-                        dataset={sampleDatasetData}
+                        dataset={sampleDatasetData as any}
                     />
                 </div>
             </div>
@@ -31,7 +31,7 @@ ReactDOM.render(
                     Open 3D Dataset Button On Distribution Page With 3D Dataset:
                 </h2>
                 <div>
-                    <MagdaPluginComponentExtraVisualisationSection
+                    <Open3dDatasetSection
                         isFetchingWhoAmI={false}
                         whoAmIError={null}
                         user={user}
@@ -42,7 +42,7 @@ ReactDOM.render(
                         history={{} as any}
                         location={{} as any}
                         match={{} as any}
-                        dataset={sampleDatasetData}
+                        dataset={sampleDatasetData as any}
                         distributionId={
                             "dist-nsw-ckan-416d8baf-cd0e-45d7-8797-4fc87fc74ffd"
                         }
@@ -55,7 +55,7 @@ ReactDOM.render(
                     Dataset:
                 </h2>
                 <div>
-                    <MagdaPluginComponentExtraVisualisationSection
+                    <Open3dDatasetSection
                         isFetchingWhoAmI={false}
                         whoAmIError={null}
                         user={user}
@@ -66,7 +66,7 @@ ReactDOM.render(
                         history={{} as any}
                         location={{} as any}
                         match={{} as any}
-                        dataset={sampleDatasetData}
+                        dataset={sampleDatasetData as any}
                         distributionId={
                             "dist-nsw-ckan-dfe942fc-6d8c-45ff-8482-096f75ceb9b7"
                         }
