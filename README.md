@@ -1,4 +1,4 @@
-# magda-ui-plugin-component-open-3d-dataset
+# Magda Plugin UI Component Open 3D Dataset
 
 A Magda UI Plugin Component that allows users to open 3D datasets from DT instances.
 
@@ -27,9 +27,11 @@ yarn build
 ```yaml
 web-server:
   externalUIComponents:
-    - "https://exmaple.com/assets/libs/MagdaPluginComponentExtraVisualisationSection.js"
+    # for production deployment, you will want to host the JS bundle yourself
+    - "https://github.com/magda-io/magda-ui-plugin-component-open-3d-dataset/releases/download/v2.0.0/Open3dDatasetSection.js"
   extraConfigData:
     "3dDatasetDigitalTwinInstances":
+    # It's possible to add support of more than one DT instances
     - sourceDataDomain: "xxx.xx.xx"
       url: "https://my.digitaltwin.com.au/"
 ```
