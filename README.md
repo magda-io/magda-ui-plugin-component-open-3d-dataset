@@ -41,19 +41,15 @@ You also need to configure Magda Gateway module `CSP` config accordingly to make
 ```yaml
 gateway:
   csp:
-    browserSniff: false
     directives:
       scriptSrc:
       - "'self'"
       - "'unsafe-inline'"
-      - exmaple.com
-      - exmaple.com
       - "blob:"
-      objectSrc:
-      - "'none'"
-      workerSrc:
-      - "'self'"
-      - "blob:"
+      # the following two domains are for downloading Magda UI plugins from github release
+      - github.com
+      # github.com will issue 301 redirection to this domain
+      - objects.githubusercontent.com
 ```
 
 For more information, please refer to this issue:
